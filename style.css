@@ -393,21 +393,30 @@ body {
 }
 
 .card-brand-icon {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: linear-gradient(135deg, rgba(0, 210, 244, 0.15), rgba(7, 43, 56, 0.8));
-  border: 1px solid var(--surface-border);
-  color: var(--cyan-primary);
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform var(--transition-fast);
 }
 
-.card-brand-icon svg {
-  width: 24px;
-  height: 24px;
+.card:hover .card-brand-icon {
+  transform: scale(1.06);
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .card-info {
